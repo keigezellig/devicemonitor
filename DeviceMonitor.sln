@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part1 - Basic", "Part1\Part1 - Basic.csproj", "{8E07C89A-FD85-4B7D-A2C3-EE579AEB5C7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part2 - Exception handling", "Part2\Part2 - Exception handling.csproj", "{7C462FDA-2E64-4C0B-B29D-006958CDB679}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E07C89A-FD85-4B7D-A2C3-EE579AEB5C7E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{8E07C89A-FD85-4B7D-A2C3-EE579AEB5C7E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{8E07C89A-FD85-4B7D-A2C3-EE579AEB5C7E}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{8E07C89A-FD85-4B7D-A2C3-EE579AEB5C7E}.Debug|x86.ActiveCfg = Debug|x86
+		{8E07C89A-FD85-4B7D-A2C3-EE579AEB5C7E}.Debug|x86.Build.0 = Debug|x86
+		{8E07C89A-FD85-4B7D-A2C3-EE579AEB5C7E}.Release|Any CPU.ActiveCfg = Release|x86
+		{8E07C89A-FD85-4B7D-A2C3-EE579AEB5C7E}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{8E07C89A-FD85-4B7D-A2C3-EE579AEB5C7E}.Release|Mixed Platforms.Build.0 = Release|x86
+		{8E07C89A-FD85-4B7D-A2C3-EE579AEB5C7E}.Release|x86.ActiveCfg = Release|x86
+		{8E07C89A-FD85-4B7D-A2C3-EE579AEB5C7E}.Release|x86.Build.0 = Release|x86
+		{7C462FDA-2E64-4C0B-B29D-006958CDB679}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7C462FDA-2E64-4C0B-B29D-006958CDB679}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{7C462FDA-2E64-4C0B-B29D-006958CDB679}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{7C462FDA-2E64-4C0B-B29D-006958CDB679}.Debug|x86.ActiveCfg = Debug|x86
+		{7C462FDA-2E64-4C0B-B29D-006958CDB679}.Debug|x86.Build.0 = Debug|x86
+		{7C462FDA-2E64-4C0B-B29D-006958CDB679}.Release|Any CPU.ActiveCfg = Release|x86
+		{7C462FDA-2E64-4C0B-B29D-006958CDB679}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{7C462FDA-2E64-4C0B-B29D-006958CDB679}.Release|Mixed Platforms.Build.0 = Release|x86
+		{7C462FDA-2E64-4C0B-B29D-006958CDB679}.Release|x86.ActiveCfg = Release|x86
+		{7C462FDA-2E64-4C0B-B29D-006958CDB679}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
