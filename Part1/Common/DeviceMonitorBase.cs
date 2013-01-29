@@ -13,19 +13,6 @@ namespace Part1.Common
         private CancellationTokenSource ctSource;
         private Task readerTask;
     
-        public MonitorStatus MonitorStatus
-        {
-            get
-            {
-                if (this.readerTask != null && this.readerTask.Status == TaskStatus.Running)
-                {
-                    return MonitorStatus.STARTED;
-                }
-
-                return MonitorStatus.STOPPED;
-            }
-        }
-
 
         public void Start()
         {
