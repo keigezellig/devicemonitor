@@ -10,7 +10,7 @@ namespace Part1
 {
     class Program
     {
-        public static IDeviceMonitor<DateTime> monitor = null;
+        public static IDeviceMonitor<int,DateTime> monitor = null;
         public static MonitorStatus currentStatus;
 
         static void Main(string[] args)
@@ -32,11 +32,11 @@ namespace Part1
                 {
                     if (monitor == null || currentStatus == MonitorStatus.STOPPED)
                     {
-                        Console.WriteLine("Starting monitor");
+                        Console.WriteLine("Starting monitor with refresh interval of 2 seconds");
                         monitor = new TimerMonitor();
                         monitor.DataReceived += new EventHandler<DataReceivedEventArgs<DateTime>>(monitor_DataReceived);
                         monitor.MonitorStatusChanged += new EventHandler<MonitorStatusEventArgs>(monitor_MonitorStatusChanged);
-                        monitor.Start();
+                        monitor.Start(2000);
                     }
  
                 }
@@ -44,11 +44,11 @@ namespace Part1
                 {
                     if (monitor == null || currentStatus == MonitorStatus.STOPPED)
                     {
-                        Console.WriteLine("Starting monitor with exception");
+                        Console.WriteLine("Starting monitor with exception occuring on the 20th second");
                         monitor = new TimerMonitorWithException();
                         monitor.MonitorStatusChanged += new EventHandler<MonitorStatusEventArgs>(monitor_MonitorStatusChanged);
                         monitor.DataReceived += new EventHandler<DataReceivedEventArgs<DateTime>>(monitor_DataReceived);
-                        monitor.Start();
+                        monitor.Start(20);
                     }
 
                 }

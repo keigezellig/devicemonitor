@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Part2.Common
 {
-    public interface IDeviceMonitor<TDeviceData> : IDisposable 
+    public interface IDeviceMonitor<TConfigData, TDeviceData> : IDisposable 
     {
-        void Start();
+        void Start(TConfigData configData);
         void Stop();
         event EventHandler<DataReceivedEventArgs<TDeviceData>> DataReceived;
         event EventHandler<MonitorStatusEventArgs> MonitorStatusChanged;

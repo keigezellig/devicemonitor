@@ -8,17 +8,16 @@ using System.Threading.Tasks;
 
 namespace Part2.Common
 {
-    public abstract class DeviceMonitorBase<TDeviceData> : IDeviceMonitor<TDeviceData> 
+    public abstract class DeviceMonitorBase<TConfigData, TDeviceData> : IDeviceMonitor<TConfigData, TDeviceData> 
     {
         private CancellationTokenSource ctSource;
         private Task readerTask;
+        protected TConfigData configData;
     
-        
 
-
-        public void Start()
+        public void Start(TConfigData configData)
         {
-
+            this.configData = configData;
             this.ctSource = new CancellationTokenSource();
             CancellationToken ct = ctSource.Token;
 

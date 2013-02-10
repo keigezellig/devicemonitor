@@ -8,7 +8,7 @@ using Part2.Common;
 
 namespace Part2.Implementation
 {
-    public class TimerMonitorWithException : DeviceMonitorBase<DateTime>
+    public class TimerMonitorWithException : DeviceMonitorBase<int,DateTime>
     {
         protected override void Initialize()
         {
@@ -19,8 +19,8 @@ namespace Part2.Implementation
             //Add some artificial delay
             Thread.Sleep(1000);
             
-            //Throw an exception
-            if (DateTime.Now.Second == 20)
+            //Throw an exception if the seconds part is equal to the supplied value
+            if (DateTime.Now.Second == this.configData)
             {
                 throw new Exception("Boom!");
             }

@@ -8,7 +8,7 @@ using Part2.Common;
 
 namespace Part2.Implementation
 {
-    public class TimerMonitor : DeviceMonitorBase<DateTime>
+    public class TimerMonitor : DeviceMonitorBase<int,DateTime>
     {
         protected override void Initialize()
         {
@@ -16,8 +16,8 @@ namespace Part2.Implementation
         }
         protected override DateTime ReadData()
         {
-            //Add some artificial delay
-            Thread.Sleep(1000);
+            //Set the refresh rate to the supplied value
+            Thread.Sleep(this.configData);
             
             //Just return the current time
             return DateTime.Now;
