@@ -6,7 +6,7 @@ using Part2.Implementation;
 using Part2.Common;
 
 
-namespace Part1
+namespace Part2
 {
     class Program
     {
@@ -15,8 +15,7 @@ namespace Part1
 
         static void Main(string[] args)
         {
-            
-
+         
             Console.WriteLine("m = Start monitor");
             Console.WriteLine("e = Start monitor with exception");
             Console.WriteLine("s = Stop current monitor");

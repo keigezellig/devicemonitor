@@ -1,9 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part1 - Basic", "Part1\Part1 - Basic.csproj", "{8E07C89A-FD85-4B7D-A2C3-EE579AEB5C7E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part2 - Exception handling", "Part2\Part2 - Exception handling.csproj", "{7C462FDA-2E64-4C0B-B29D-006958CDB679}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part3 - AsyncAwait", "Part3\Part3 - AsyncAwait.csproj", "{76EE0B9D-8380-4AFD-A618-184AAC562D08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,16 @@ Global
 		{7C462FDA-2E64-4C0B-B29D-006958CDB679}.Release|Mixed Platforms.Build.0 = Release|x86
 		{7C462FDA-2E64-4C0B-B29D-006958CDB679}.Release|x86.ActiveCfg = Release|x86
 		{7C462FDA-2E64-4C0B-B29D-006958CDB679}.Release|x86.Build.0 = Release|x86
+		{76EE0B9D-8380-4AFD-A618-184AAC562D08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76EE0B9D-8380-4AFD-A618-184AAC562D08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76EE0B9D-8380-4AFD-A618-184AAC562D08}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{76EE0B9D-8380-4AFD-A618-184AAC562D08}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{76EE0B9D-8380-4AFD-A618-184AAC562D08}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{76EE0B9D-8380-4AFD-A618-184AAC562D08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76EE0B9D-8380-4AFD-A618-184AAC562D08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76EE0B9D-8380-4AFD-A618-184AAC562D08}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{76EE0B9D-8380-4AFD-A618-184AAC562D08}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{76EE0B9D-8380-4AFD-A618-184AAC562D08}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
